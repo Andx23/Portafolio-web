@@ -26,11 +26,13 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/expertise.css">
+  <link rel="stylesheet" href="../css/language-selector.css">
 
   <!-- JavaScript -->
   <script src="../js/navigation.js" defer></script>
   <script src="../js/animations.js" defer></script>
   <script src="../js/main.js" defer></script>
+  <script src="../js/language-selector.js" defer></script>
 </head>
 
 <body class="expertise-page">
@@ -55,20 +57,75 @@
       CREATIVE PORTFOLIO
     </div>
 
-    <button
-      class="menu-toggle expertise-menu-toggle"
-      type="button"
-      aria-label="Abrir menú"
-      aria-expanded="false"
-      aria-controls="main-navigation"
-    >
-      <span class="menu-toggle__text">MENU</span>
+    <div class="expertise-header__actions">
 
-      <span class="menu-toggle__icon">
-        <span></span>
-        <span></span>
-      </span>
-    </button>
+      <!-- LANGUAGE SELECTOR -->
+
+      <div class="language-selector">
+
+        <button
+          class="language-selector__toggle"
+          type="button"
+          aria-label="Seleccionar idioma"
+          aria-expanded="false"
+          aria-controls="language-dropdown"
+          title="Cambiar idioma"
+        >
+          <img
+            src="../assets/images/Lenguage%20icono.png"
+            alt=""
+            class="language-selector__icon"
+          >
+        </button>
+
+        <div
+          class="language-selector__dropdown"
+          id="language-dropdown"
+          aria-label="Seleccionar idioma"
+        >
+
+          <button
+            class="language-selector__option"
+            type="button"
+            data-language="es"
+            aria-pressed="true"
+          >
+            <span>🇨🇴 Español</span>
+            <span class="language-selector__check">✓</span>
+          </button>
+
+          <button
+            class="language-selector__option"
+            type="button"
+            data-language="en"
+            aria-pressed="false"
+          >
+            <span>🇬🇧 English</span>
+            <span class="language-selector__check">✓</span>
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- MENU BUTTON -->
+
+      <button
+        class="menu-toggle expertise-menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        <span class="menu-toggle__text">MENÚ</span>
+
+        <span class="menu-toggle__icon">
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+    </div>
 
   </header>
 
@@ -82,51 +139,51 @@
   >
 
     <div class="navigation__top">
-      <span>INSEPTION®</span>
-      <span>SELECT A DESTINATION</span>
+      <span>INSEPTION / NAVEGACIÓN</span>
+      <span>SELECCIONA UNA SECCIÓN</span>
     </div>
 
     <div class="navigation__links">
 
       <a href="../index.html" class="navigation__link">
         <span class="navigation__number">01</span>
-        <span class="navigation__name">HOME</span>
+        <span class="navigation__name">INICIO</span>
         <span class="navigation__arrow">↗</span>
       </a>
 
       <a href="sobre-mi.html" class="navigation__link">
         <span class="navigation__number">02</span>
-        <span class="navigation__name">ABOUT ME</span>
+        <span class="navigation__name">SOBRE MÍ</span>
         <span class="navigation__arrow">↗</span>
       </a>
 
       <a href="habilidades.html" class="navigation__link">
         <span class="navigation__number">03</span>
-        <span class="navigation__name">EXPERTISE</span>
+        <span class="navigation__name">HABILIDADES</span>
         <span class="navigation__arrow">↗</span>
       </a>
 
       <a href="proyectos.html" class="navigation__link">
         <span class="navigation__number">04</span>
-        <span class="navigation__name">PROJECTS</span>
+        <span class="navigation__name">PROYECTOS</span>
         <span class="navigation__arrow">↗</span>
       </a>
 
       <a href="experiencia.html" class="navigation__link">
         <span class="navigation__number">05</span>
-        <span class="navigation__name">EXPERIENCE</span>
+        <span class="navigation__name">EXPERIENCIA</span>
         <span class="navigation__arrow">↗</span>
       </a>
 
       <a href="servicios.html" class="navigation__link">
         <span class="navigation__number">06</span>
-        <span class="navigation__name">SERVICES</span>
+        <span class="navigation__name">SERVICIOS</span>
         <span class="navigation__arrow">↗</span>
       </a>
 
       <a href="contacto.html" class="navigation__link">
         <span class="navigation__number">07</span>
-        <span class="navigation__name">CONTACT</span>
+        <span class="navigation__name">CONTACTO</span>
         <span class="navigation__arrow">↗</span>
       </a>
 

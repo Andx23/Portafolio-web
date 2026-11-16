@@ -27,6 +27,7 @@
   <!-- STYLES -->
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/services.css">
+  <link rel="stylesheet" href="../css/language-selector.css">
 </head>
 
 <body class="services-page">
@@ -51,23 +52,69 @@
       <span>SERVICIOS / 2026</span>
     </div>
 
-    <button
-      class="menu-toggle services-menu-toggle"
-      type="button"
-      aria-label="Abrir menú"
-      aria-expanded="false"
-      aria-controls="main-navigation"
-    >
-      <span class="menu-toggle__text">MENU</span>
+    <div class="services-header__actions">
 
-      <span class="menu-toggle__icon" aria-hidden="true">
-        <span></span>
-        <span></span>
-      </span>
-    </button>
+      <div class="language-selector">
+
+        <button
+          class="language-selector__toggle"
+          type="button"
+          aria-label="Seleccionar idioma"
+          aria-expanded="false"
+          aria-haspopup="true"
+          title="Cambiar idioma"
+        >
+          <img
+            src="../assets/images/Lenguage%20icono.png"
+            alt=""
+            class="language-selector__icon"
+          >
+        </button>
+
+        <div class="language-selector__dropdown">
+
+          <button
+            class="language-selector__option"
+            type="button"
+            data-language="es"
+            aria-pressed="true"
+          >
+            <span>Español 🇨🇴</span>
+            <span class="language-selector__check">✓</span>
+          </button>
+
+          <button
+            class="language-selector__option"
+            type="button"
+            data-language="en"
+            aria-pressed="false"
+          >
+            <span>English 🇬🇧</span>
+            <span class="language-selector__check">✓</span>
+          </button>
+
+        </div>
+
+      </div>
+
+      <button
+        class="menu-toggle services-menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        <span class="menu-toggle__text">MENU</span>
+
+        <span class="menu-toggle__icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+    </div>
 
   </header>
-
 
   <!-- NAVIGATION -->
   <nav
@@ -134,7 +181,6 @@
 
   </nav>
 
-
   <!-- MAIN -->
   <main class="services-main">
 
@@ -189,7 +235,6 @@
 
     </section>
 
-
     <!-- MAIN SERVICES -->
     <section
       class="services-section"
@@ -210,7 +255,6 @@
         </p>
 
       </div>
-
 
       <div class="service-grid">
 
@@ -290,7 +334,6 @@
 
         </article>
 
-
         <!-- DIGITAL DESIGN -->
         <article class="service-card service-card--design">
 
@@ -361,7 +404,6 @@
           </a>
 
         </article>
-
 
         <!-- MULTIMEDIA -->
         <article class="service-card service-card--multimedia">
@@ -445,7 +487,6 @@
 
     </section>
 
-
     <!-- WORK PROCESS -->
     <section class="services-process">
 
@@ -464,7 +505,6 @@
         </p>
 
       </div>
-
 
       <div class="process-grid">
 
@@ -512,7 +552,6 @@
 
     </section>
 
-
     <!-- VALUE PROPOSITION -->
     <section class="services-value">
 
@@ -547,7 +586,6 @@
       </div>
 
     </section>
-
 
     <!-- CONTACT CTA -->
     <section
@@ -587,7 +625,6 @@
 
   </main>
 
-
   <!-- FOOTER -->
   <footer class="services-footer">
 
@@ -617,11 +654,11 @@
 
   </footer>
 
-
   <!-- SCRIPTS -->
   <script src="../js/navigation.js"></script>
   <script src="../js/animations.js"></script>
   <script src="../js/main.js"></script>
+  <script src="../js/language-selector.js"></script>
 
 </body>
 </html>

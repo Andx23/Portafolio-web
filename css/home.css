@@ -829,3 +829,20 @@
   }
 
 }
+
+/* ========================================
+   HEADER ACTIONS
+======================================== */
+
+.site-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .site-header__actions {
+    gap: 12px;
+  }
+}

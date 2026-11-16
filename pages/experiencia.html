@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/pages.css">
   <link rel="stylesheet" href="../css/experience.css">
+  <link rel="stylesheet" href="../css/language-selector.css">
 </head>
 
 <body class="experience-page">
@@ -53,20 +54,71 @@
       <span>PERFIL PROFESIONAL / 2026</span>
     </div>
 
-    <button
-      class="menu-toggle experience-menu-toggle"
-      type="button"
-      aria-label="Abrir menú"
-      aria-expanded="false"
-      aria-controls="main-navigation"
-    >
-      <span class="menu-toggle__text">MENÚ</span>
+    <div class="experience-header__actions">
 
-      <span class="menu-toggle__icon" aria-hidden="true">
-        <span></span>
-        <span></span>
-      </span>
-    </button>
+      <!-- LANGUAGE SELECTOR -->
+      <div class="language-selector">
+
+        <button
+          class="language-selector__toggle"
+          type="button"
+          aria-label="Seleccionar idioma"
+          aria-expanded="false"
+          aria-controls="language-dropdown"
+          title="Cambiar idioma"
+        >
+          <img
+            src="../assets/images/Lenguage%20icono.png"
+            alt=""
+            class="language-selector__icon"
+          >
+        </button>
+
+        <div
+          class="language-selector__dropdown"
+          id="language-dropdown"
+          aria-label="Seleccionar idioma"
+        >
+          <button
+            class="language-selector__option"
+            type="button"
+            data-language="es"
+            aria-pressed="true"
+          >
+            <span>🇨🇴 Español</span>
+            <span class="language-selector__check">✓</span>
+          </button>
+
+          <button
+            class="language-selector__option"
+            type="button"
+            data-language="en"
+            aria-pressed="false"
+          >
+            <span>🇬🇧 English</span>
+            <span class="language-selector__check">✓</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- MENU BUTTON -->
+      <button
+        class="menu-toggle experience-menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        <span class="menu-toggle__text">MENÚ</span>
+
+        <span class="menu-toggle__icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+    </div>
 
   </header>
 
@@ -711,6 +763,7 @@
   <script src="../js/navigation.js"></script>
   <script src="../js/animations.js"></script>
   <script src="../js/main.js"></script>
+  <script src="../js/language-selector.js"></script>
 
 </body>
 </html>
