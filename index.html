@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Andrés Cervantes — Multimedia Communication Specialist & Front-End / Full-Stack Developer. Portafolio INSEPTION.">
+
+  <title>INSEPTION® — Andrés Cervantes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/home.css">
+
+  <script src="js/navigation.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body class="home-page">
+
+  <main class="hero">
+
+    <!-- Video cinematográfico -->
+    <div class="hero__media">
+      <video
+        class="hero__video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        aria-hidden="true"
+      >
+        <source
+          src="assets/videos/Enemigo%20publico%20%23Zero.mp4"
+          type="video/mp4"
+        >
+        Tu navegador no puede reproducir este video.
+      </video>
+    </div>
+
+    <!-- Capas visuales -->
+    <div class="hero__overlay"></div>
+    <div class="hero__grain"></div>
+
+    <!-- Navegación superior -->
+    <header class="site-header">
+
+      <a href="index.html" class="site-header__brand" aria-label="INSEPTION, inicio">
+        <img
+          src="assets/images/White%20Geometric%20A_M%20Emblem.png"
+          alt="Emblema INSEPTION"
+          class="site-header__logo"
+        >
+      </a>
+
+      <div class="site-header__edition">
+        <span class="site-header__line"></span>
+        <span>CREATIVE PORTFOLIO</span>
+      </div>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        <span class="menu-toggle__text">MENU</span>
+        <span class="menu-toggle__icon">
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+    </header>
+
+    <!-- Menú cinematográfico -->
+    <nav class="navigation" id="main-navigation" aria-hidden="true">
+
+      <div class="navigation__top">
+        <span>INSEPTION®</span>
+        <span>SELECT A DESTINATION</span>
+      </div>
+
+      <div class="navigation__links">
+
+        <a href="index.html" class="navigation__link">
+          <span class="navigation__number">01</span>
+          <span class="navigation__name">HOME</span>
+          <span class="navigation__arrow">↗</span>
+        </a>
+
+        <a href="pages/sobre-mi.html" class="navigation__link">
+          <span class="navigation__number">02</span>
+          <span class="navigation__name">ABOUT ME</span>
+          <span class="navigation__arrow">↗</span>
+        </a>
+
+        <a href="pages/habilidades.html" class="navigation__link">
+          <span class="navigation__number">03</span>
+          <span class="navigation__name">EXPERTISE</span>
+          <span class="navigation__arrow">↗</span>
+        </a>
+
+        <a href="pages/proyectos.html" class="navigation__link">
+          <span class="navigation__number">04</span>
+          <span class="navigation__name">PROJECTS</span>
+          <span class="navigation__arrow">↗</span>
+        </a>
+
+        <a href="pages/experiencia.html" class="navigation__link">
+          <span class="navigation__number">05</span>
+          <span class="navigation__name">EXPERIENCE</span>
+          <span class="navigation__arrow">↗</span>
+        </a>
+
+        <a href="pages/servicios.html" class="navigation__link">
+          <span class="navigation__number">06</span>
+          <span class="navigation__name">SERVICES</span>
+          <span class="navigation__arrow">↗</span>
+        </a>
+
+        <a href="pages/contacto.html" class="navigation__link">
+          <span class="navigation__number">07</span>
+          <span class="navigation__name">CONTACT</span>
+          <span class="navigation__arrow">↗</span>
+        </a>
+
+      </div>
+
+      <div class="navigation__footer">
+        <span>ANDRÉS CERVANTES</span>
+        <span>DESIGN · CODE · CREATE</span>
+      </div>
+
+    </nav>
+
+    <!-- Contenido principal -->
+    <section class="hero__content">
+
+      <div class="hero__eyebrow">
+        <span class="hero__status"></span>
+        <span>PORTFOLIO / 2027</span>
+      </div>
+
+      <div class="hero__identity">
+
+        <img
+          src="assets/images/White%20Inseption%20Logo%20with%20Cross%20Emblem.png"
+          alt="INSEPTION"
+          class="hero__logo"
+        >
+
+        <p class="hero__subtitle">
+          DIGITAL EXPERIENCES. CREATIVE THINKING.
+        </p>
+
+      </div>
+
+      <div class="hero__description">
+        <p>ANDRÉS CERVANTES</p>
+
+        <span>
+          MULTIMEDIA COMMUNICATION SPECIALIST & FRONT-END / FULL-STACK DEVELOPER
+        </span>
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="hero__footer">
+
+      <!-- Izquierda: descargas y ubicación -->
+      <div class="hero__footer-left">
+
+        <div class="hero__downloads">
+
+          <!-- DESCARGAR PORTAFOLIO -->
+          <a
+            href="assets/documents/Portafolio%20Andres.pdf"
+            class="hero__download"
+            download="Andres-Cervantes-Portfolio.pdf"
+            aria-label="Descargar portafolio PDF"
+            title="Descargar portafolio"
+          >
+            <img
+              src="assets/images/White%20Briefcase%20Portfolio%20Icon.png"
+              alt=""
+              class="hero__download-icon"
+            >
+            <span class="hero__download-arrow" aria-hidden="true">↓</span>
+          </a>
+
+          <!-- DESCARGAR CV -->
+          <a
+            href="assets/documents/CV%20Andres%20SPN.pdf"
+            class="hero__download"
+            download="Andres-Cervantes-CV.pdf"
+            aria-label="Descargar curriculum vitae PDF"
+            title="Descargar CV"
+          >
+            <img
+              src="assets/images/White%20CV%20Profile%20Document%20Icon.png"
+              alt=""
+              class="hero__download-icon"
+            >
+            <span class="hero__download-arrow" aria-hidden="true">↓</span>
+          </a>
+
+        </div>
+
+        <div class="hero__location">
+          <span class="hero__footer-line"></span>
+          <span>BOGOTÁ, COLOMBIA</span>
+        </div>
+
+      </div>
+
+      <!-- Centro: proyectos -->
+      <a href="pages/proyectos.html" class="hero__explore">
+        <span>EXPLORE MY WORK</span>
+        <span class="hero__explore-arrow">↗</span>
+      </a>
+
+      <!-- Derecha: redes sociales -->
+      <div class="hero__socials" aria-label="Redes sociales">
+
+        <a
+          href="https://www.linkedin.com/in/andres-cervantes-6067321a5/"
+          class="hero__social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visitar LinkedIn"
+          title="LinkedIn"
+        >
+          <img
+            src="assets/images/White%20LinkedIn%20Logo%20Icon.png"
+            alt=""
+            class="hero__social-icon"
+          >
+        </a>
+
+        <a
+          href="https://github.com/Andx23"
+          class="hero__social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visitar GitHub"
+          title="GitHub"
+        >
+          <img
+            src="assets/images/White%20Octocat%20in%20Circular%20Emblem.png"
+            alt=""
+            class="hero__social-icon"
+          >
+        </a>
+
+        <a
+          href="https://www.instagram.com/andrew.cl23/"
+          class="hero__social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visitar Instagram"
+          title="Instagram"
+        >
+          <img
+            src="assets/images/White%20Instagram%20Outline%20Icon.png"
+            alt=""
+            class="hero__social-icon"
+          >
+        </a>
+
+      </div>
+
+    </footer>
+
+  </main>
+
+</body>
+</html>
